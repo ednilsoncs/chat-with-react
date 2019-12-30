@@ -1,11 +1,14 @@
+
 {
   "env": {
     "browser": true,
     "es6": true
   },
+  "parser": "babel-eslint",
   "extends": [
     "prettier",
-    "airbnb"
+    "airbnb",
+    "plugin:flowtype/recommended",
   ],
   "globals": {
     "Atomics": "readonly",
@@ -45,6 +48,8 @@
     "global-require": "off",
     "react-native/no-raw-text": "off",
     "react/prop-types": "off",
-    "max-len": "off"
+    "max-len": "off",
+  },
+  "settings": {
   }
 }
